@@ -1,0 +1,191 @@
+@media only screen and (min-width: 1025px) {
+    .header__toggle-sidebar-icon-phone {
+        display: none;
+    }
+    .header__logo-icon-phone {
+        display: none;
+    }
+    .pay-break{
+        display: block;
+    }
+    .yes-wrap{
+        display: none;
+    }
+    .license-break {
+        display: none;
+    }
+    .license-big {
+        display: block;
+    }
+    .prod-price-phone {
+        display: none;
+    }
+    .basket__main-border-phone {
+        display: none;
+    }
+    .like-delete-phone {
+        display: none;
+    }
+    .basket__more-info-phone {
+        display: none;
+    }
+    .balance-phone, .like-delete-phone {
+        display: none;
+    }
+    .basket__absence-border-phone {
+        display: none;
+    }
+    .redelivery-break-phone{
+        display: none;
+    }
+    .search-icon-phone, .footer__bar-content {
+        display: none;
+    }
+    .for-all-icon-count1 {
+        display: none;
+    }
+    .remaind {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+    body {
+        width: 1024px;
+    }
+    .for-all-icon-count1 {
+        display: none;
+    }
+    .delivery-radio-star {
+        display: none;
+    }
+    .prod-price-phone {
+        display: none;
+    }
+    .remaind {
+        display: none;
+    }
+    .search-icon-phone, .footer__bar-content{
+        display: none;
+    }
+    .basket__absence-border-phone {
+        display: none;
+    }
+    .like-delete-phone {
+        display: none;
+    }
+    .redelivery-break-phone{
+        display: none;
+    }
+    .basket__more-info-phone {
+        display: none;
+    }
+    .header__toggle-sidebar-icon-phone {
+        display: none;
+    }
+    .header__logo-icon-phone {
+        display: none;
+    }
+    .basket__main-border-phone {
+        display: none;
+    }
+    .basket {
+        padding: 0 25px 12px 23px;;
+    }
+    .pay-break {
+        display: none;
+    }
+    .yes-wrap {
+        display: block;
+    }
+
+    .license-big {
+        display: none;
+    }
+    .header__search-input {
+        width: 554px;
+    }
+
+    .rectangle {
+        width: 1024px;
+    }
+
+    .rounding {
+        width: 1024px;
+    }
+
+    .basket__main {
+        width: 645px;
+    }
+    .basket__main-border {
+        width: 645px;
+    }
+    .basket__main-content {
+        width: 641px;
+    }
+    .basket__making{
+        width: 638px;
+    }
+    .basket__payment {
+        width: 639px;
+    }
+    .basket__recipient {
+        width: 640px;
+    }
+    .basket__pay-content {
+        width: 256px;
+        padding: 17px 22px 24px 24px;
+    }
+    .basket__price-info {
+        width: 254px;
+    }
+    .basket__pay-redelivery {
+        width: 254px;
+    }
+    .basket__pay-redelivery img {
+        margin-left: 7px;
+    }
+    .basket__pay-redelivery div {
+        /*line-height: 16;*/
+        margin-top: 7px;
+        margin-left: 8px;
+    }
+    .basket__pay-now-wrapper {
+        width: 253px;
+    }
+    .basket__pay-card {
+        margin-top: 25px;
+    }
+    .basket__pay-card-info img {
+        margin-top: 5px;
+        margin-left: -1px;
+    }
+    .basket__pay-card-info div {
+        margin-top: 8px;
+    }
+    .basket__pay-now-wrapper {
+        margin-top: 12px;
+    }
+    .basket__pay-now-wrapper {
+        margin-top: 12px;
+    }
+    .order-btn button {
+        width: 256px;
+    }
+
+    .basket__recipient-name-input, .basket__recipient-lastname-input {
+        width: 263px;
+    }
+    .basket__recipient-mail-input, .basket__recipient-phone-input, .basket__recipient-inn-input {
+        width: 164px;
+    }
+
+    .footer-circle {
+        width: 1024px;
+    }
+    footer {
+        width: 1024px;
+    }
+}

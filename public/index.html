@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/styles/index.css" />
+    <link rel="stylesheet" href="../src/styles/media.css">
+    <link rel="stylesheet" href="../src/styles/mediaPhone.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <button class="header__toggle-sidebar" aria-label="Toggle Sidebar">
+            <img
+                    src="../src/assets/sidebar.svg"
+                    alt="toggle-icon"
+                    class="header__toggle-sidebar-icon"
+            />
+            <img
+                    src="../src/assets/icon-phone.svg"
+                    alt="toggle-icon"
+                    class="header__toggle-sidebar-icon-phone"
+            />
+
+        </button>
+        <div class="header__logo">
+            <img
+                    src="../src/assets/logo1.svg"
+                    alt=""
+                    class="header__logo-icon"
+            />
+            <img
+                    src="../src/assets/logo1-phone.svg"
+                    alt=""
+                    class="header__logo-icon-phone"
+            />
+        </div>
+
+        <div class="header__search-container">
+            <input
+                    type="text"
+                    id="search"
+                    placeholder="Я ищу..."
+                    class="header__search-input"
+            />
+            <img
+                    src="../src/assets/Search.svg"
+                    alt="search-icon"
+                    class="header__search-icon"
+            />
+        </div>
+
+        <div class="header__profile-container">
+            <img
+                    src="../src/assets/profile.svg"
+                    alt=""
+                    class="header__profile-icon"
+            />
+            <div class="header__profile-text">Профиль</div>
+        </div>
+
+        <div class="header__cart-container">
+            <img src="../src/assets/cart.svg" alt="" class="header__cart-icon" />
+            <div class="header__cart-text">Корзина</div>
+             <span class="header__cart-icon-count" >3</span>
+        </div>
+        <div class="search-icon-phone">
+            <button>
+                <img src="../src/assets/Search.svg"/>
+            </button>
+        </div>
+    </div>
+
+    <div class="rectangle"></div>
+    <div class="rounding"></div>
+</header>
+<main>
+        <div class="basket">
+            <div class="basket__main">
+                <div class="basket__main-header">
+                    <div>Корзина</div>
+                </div>
+                <div class="basket__main-select-all-wrapper">
+                    <div class="all-price-products">266 товаров · 2 100 569 сом</div>
+                    <div class="basket__main-select-all">
+                        <input type="checkbox" id="selectAll" class="basket__main-select-all-checkbox">
+                        <label for="selectAll">Выбрать все</label>
+                    </div>
+                    <button class="basket__main-select-all-icon"><img src="../src/assets/iconAll.svg"/></button>
+                </div>
+                <div class="basket__main-border"></div>
+                <div class="basket__main-content">
+                    <div class="basket__main-content-wrapper">
+                        <div class="basket__main-select-wrapper">
+                            <div class="basket__checkbox-container">
+                                <input type="checkbox" id="basketCheckbox" class="basket__checkbox">
+                                <label for="basketCheckbox" class="basket__checkbox-icon"></label>
+                            </div>
+                            <div class="basket__main-select-img">
+                                <img  src="../src/img/img1.svg">
+                            </div>
+                            <div class="basket__main-prod-info">
+                                <div class="prod-price-phone">
+                                    <div class="prod-price-now">522 <span>сом</span></div>
+                                    <div class="prod-discount">1051 сом</div>
+                                </div>
+                                <div class="prod-name">Футболка UZcotton мужская</div>
+                                <div class="prod-color">
+                                    <span>Цвет: белый</span>
+                                    <span class="size-main">Размер: 56</span>
+                                </div>
+                                <div class="prod-type">Коледино WB  </div>
+                                <div class="prod-company">OOO Вайлдберриз <span> <img src="../src/assets/!.svg"/>
+                                    <div class="company-info">
+                                        <div class="company-info-header">OOO Вайлдберриз</div>
+                                        <div class="company-info-ogrn">ОГРН: 5167746237148</div>
+                                        <div class="company-info-address">
+                                            129337, Москва, улица Красная Сосна, 2,<br>
+                                            корпус 1, стр. 1, помещение 2, офис 34
+                                        </div>
+                                    </div>
+                                </span></div>
+                            </div>
+                        </div>
+
+                        <div class="basket__more-info">
+                            <div class="prod-count">
+                                <div class="prod-counter">
+                                    <button disabled class="minus">−</button>
+                                    <input class="count" value="1"/>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="balance">Осталось 2 шт.</div>
+                                <div class="like-delete">
+                                    <img class="like-img" src="../src/assets/like.svg"/>
+                                    <img class="delete-img" src="../src/assets/delete.svg"/>
+                                </div>
+                            </div>
+                            <div class="prod-price">
+                                <div class="prod-price-now">522 <span>сом</span></div>
+                                <div class="prod-discount">1051 сом</div>
+                                <div class="prod-discount-hover">
+                                    <div class="prod-discount-hover-head">
+                                        <span>Скидка 55%</span>
+                                        <span>−300 сом</span>
+                                    </div>
+                                    <div class="prod-discount-hover-foot">
+                                        <span>Скидка покупателя 10%</span>
+                                        <span>−30 сом</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__main-border-phone"></div>
+                    <div class="basket__main-content-wrapper">
+                        <div class="basket__main-select-wrapper">
+                            <div class="basket__checkbox-container">
+                                <input type="checkbox" id="basketCheckbox2" class="basket__checkbox">
+                                <label for="basketCheckbox2" class="basket__checkbox-icon"></label>
+                            </div>
+                            <div class="basket__main-select-img">
+                                <img  src="../src/img/img2.svg">
+                            </div>
+                            <div class="basket__main-prod-info">
+                                <div class="prod-price-phone">
+                                    <div class="prod-price-now"><span>2 100 047 сом</span></div>
+                                    <div class="prod-discount">2 300 047 сом</div>
+                                </div>
+                                <div class="prod-name">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</div>
+                                <div class="prod-color">
+                                    <span>Цвет: прозрачный</span>
+                                </div>
+                                <div class="prod-type">Коледино WB  </div>
+                                <div class="prod-company">OOO Мегапрофстиль <span> <img src="../src/assets/!.svg"/><div class="company-info">
+                                        <div class="company-info-header">OOO «МЕГАПРОФСТИЛЬ»</div>
+                                        <div class="company-info-ogrn">ОГРН: 5167746237148</div>
+                                        <div class="company-info-address">
+                                            129337, Москва, улица Красная Сосна, 2,<br>
+                                            корпус 1, стр. 1, помещение 2, офис 34
+                                        </div>
+                                    </div></span> </div>
+                            </div>
+                        </div>
+
+                        <div class="basket__more-info">
+                            <div class="prod-count">
+                                <div class="prod-counter">
+                                    <button class="minus">−</button>
+                                    <input class="count" value="200"/>
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="like-delete">
+                                    <img class="like-img" src="../src/assets/like.svg"/>
+                                    <img class="delete-img" src="../src/assets/delete.svg"/>
+                                </div>
+                            </div>
+                            <div class="prod-price">
+                                <div class="prod-price-now"><span>2 100 047 сом</span></div>
+                                <div class="prod-discount">2 300 047 сом</div>
+                                <div class="prod-discount-hover">
+                                    <div class="prod-discount-hover-head">
+                                        <span>Скидка 55%</span>
+                                        <span>−300 сом</span>
+                                    </div>
+                                    <div class="prod-discount-hover-foot">
+                                        <span>Скидка покупателя 10%</span>
+                                        <span>−30 сом</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__main-border-phone"></div>
+                    <div class="basket__main-content-wrapper">
+                        <div class="basket__main-select-wrapper">
+                            <div class="basket__checkbox-container">
+                                <input type="checkbox" id="basketCheckbox3" class="basket__checkbox">
+                                <label for="basketCheckbox3" class="basket__checkbox-icon"></label>
+                            </div>
+                            <div class="basket__main-select-img">
+                                <img  src="../src/img/img3.svg">
+                            </div>
+                            <div class="basket__main-prod-info">
+                                <div class="prod-price-phone">
+                                    <div class="prod-price-now">494 <span>сом</span></div>
+                                    <div class="prod-discount">950 сом</div>
+
+                                </div>
+                                <div class="prod-name">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </div>
+                                <div class="prod-color">
+                                </div>
+                                <div class="prod-type">Коледино WB  </div>
+                                <div class="prod-company">OOO Вайлдберриз <span> <img src="../src/assets/!.svg"/><div class="company-info">
+                                        <div class="company-info-header">OOO Вайлдберриз</div>
+                                        <div class="company-info-ogrn">ОГРН: 5167746237148</div>
+                                        <div class="company-info-address">
+                                            129337, Москва, улица Красная Сосна, 2,<br>
+                                            корпус 1, стр. 1, помещение 2, офис 34
+                                        </div>
+                                    </div></span></div>
+                            </div>
+                        </div>
+
+                        <div class="basket__more-info ">
+                            <div class="prod-count">
+                                <div class="prod-counter">
+                                    <button class="minus">−</button>
+                                    <input class="count" value="2"/>
+                                    <button disabled class="plus">+</button>
+                                </div>
+                                <div class="balance">Осталось 2 шт.</div>
+                                <div class="like-delete">
+                                    <img class="like-img" src="../src/assets/like.svg"/>
+                                    <img class="delete-img" src="../src/assets/delete.svg"/>
+                                </div>
+
+                            </div>
+                            <div class="prod-price">
+                                <div class="prod-price-now">494 <span>сом</span></div>
+                                <div class="prod-discount">950 сом</div>
+                                <div class="prod-discount-hover">
+                                    <div class="prod-discount-hover-head">
+                                        <span>Скидка 55%</span>
+                                        <span>−300 сом</span>
+                                    </div>
+                                    <div class="prod-discount-hover-foot">
+                                        <span>Скидка покупателя 10%</span>
+                                        <span>−30 сом</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__absence">
+                    <div class="basket__absence-text">
+                        Отсутствуют · 3 товара
+                    </div>
+                    <button class="basket__absence-button"><img src="../src/assets/iconAll.svg"/></button>
+                </div>
+                <div class="basket__main-border"></div>
+                <div class="basket__absence-content">
+                    <div class="basket__absence-content-wrapper">
+                        <div class="basket__absence-img">
+                            <img src="../src/img/img4.svg"/>
+                            <span class="remaind">56</span>
+                            <div class="basket__absence-info">
+                                <div class="basket__absence-name">Футболка UZcotton мужская</div>
+                                <div class="basket__absence-color">
+                                    <span>Цвет: белый</span>
+                                    <span class="size-absence">Размер: 56</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basket__absence-more-info">
+                            <div class="basket__absence-more-info-wrapper">
+                                <button><img src="../src/assets/like.svg"/></button>
+                                <button><img src="../src/assets/delete.svg"/></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__absence-border-phone"></div>
+                    <div class="basket__absence-content-wrapper">
+                        <div class="basket__absence-img">
+                            <img src="../src/img/img5.svg"/>
+                            <div class="basket__absence-info">
+                                <div class="basket__absence-name">
+                                    Силиконовый чехол картхолдер (отверстия)
+                                    для карт, прозрачный кейс бампер на
+                                    Apple iPhone XR, MobiSafe
+                                </div>
+                                <div class="basket__absence-color">
+                                    <span>Цвет: прозрачный</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basket__absence-more-info">
+                            <div class="basket__absence-more-info-wrapper">
+                                <button><img src="../src/assets/like.svg"/></button>
+                                <button><img src="../src/assets/delete.svg"/></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__absence-border-phone"></div>
+                    <div class="basket__absence-content-wrapper">
+                        <div class="basket__absence-img">
+                            <img src="../src/img/img6.svg"/>
+                            <span class="remaind">56/54/52...</span>
+                            <div class="basket__absence-info">
+                                <div class="basket__absence-name">
+                                    Карандаши цветные Faber-Castell "Замок",
+                                    набор 24 цвета, заточенные, шестигранные, Faber-Castell
+                                </div>
+                                <div class="basket__absence-color">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="basket__absence-more-info">
+                            <div class="basket__absence-more-info-wrapper">
+                                <button><img src="../src/assets/like.svg"/></button>
+                                <button><img src="../src/assets/delete.svg"/></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__making">
+                    <div class="basket__making-wrapper">
+                        <div class="basket__making-header">
+                            <div>Способ доставки</div>
+                            <div><button class="basket__pay-delivery-btb">Изменить</button></div>
+                        </div>
+                        <div class="basket__making-pick-up">
+                            <div class="basket__making-pick-up-text">Пункт выдачи</div>
+                            <div>
+                                <div class="block-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+                                <div class="block-rate">
+                                    <img src="../src/assets/ster.svg"/>
+                                    <span>4.99</span>
+                                    <spa>Ежедневно с 10 до 21 </spa>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket__making-price-delivery">
+                            <div>Стоимость доставки</div>
+                            <div>Бесплатно</div>
+                        </div>
+                        <div class="basket__making-delivery-date1">
+                            <div>5—6 февраля</div>
+                            <div class="basket__making-delivery-date1-prod">
+                                <div><img src="../src/img/img7.svg"/></div>
+                                <div><img src="../src/img/img8.svg"/><span class="for-all-icon-count">184</span></div>
+                                <div><img src="../src/img/img9.svg"/><span class="for-all-icon-count">2</span></div>
+                            </div>
+                        </div>
+                        <div class="basket__making-delivery-date2">
+                            <div>7—8 февраля</div>
+                            <div class="basket__making-delivery-date2-prod">
+                                <div><img src="../src/img/img8.svg"/><span class="for-all-icon-count">16</span><span class="for-all-icon-count1">16</span></div>
+                            </div>
+                        </div>
+                        <div class="basket__making-redelivery">
+                            <div><img src="../src/assets/icon.svg"/></div>
+                            <div>Обратная доставка товаров на склад при отказе — <a>бесплатно</a></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__payment">
+                    <div class="basket__payment-wrapper">
+                        <div class="basket__payment-header">
+                            <div>Способ оплаты</div>
+                            <div><button class="basket__payment-header-btn pay-delivery-btb">Изменить</button></div>
+                        </div>
+                        <div class="basket__payment-card">
+                            <div><img src="../src/assets/mir.svg"/></div>
+                            <div>1234 56•• •••• 1234</div>
+                            <div>01/30</div>
+                        </div>
+                        <div class="basket__payment-more">
+                            Спишем оплату с карты при получении
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__recipient">
+                    <form id="basket__recipient-form" class="basket__recipient-wrapper">
+                        <div class="basket__recipient-header">
+                            Получатель
+                        </div>
+                        <div class="basket__recipient-info">
+                            <div class="basket__recipient-name">
+                                <input type="text" id="name" class="basket__recipient-name-input" required>
+                                <label for="name" class="basket__recipient-name-input-label">Имя</label>
+                                <div class="error-message" id="name-error">Укажите имя</div>
+                            </div>
+
+                            <div class="basket__recipient-lastname">
+                                <input type="text" id="lastName" class="basket__recipient-lastname-input" required>
+                                <label for="lastName" class="basket__recipient-lastname-input-label">Фамилия</label>
+                                <div class="error-message" id="lastname-error">Введите фамилию</div>
+                            </div>
+                        </div>
+                        <div class="basket__recipient-info-more">
+                            <div class="basket__recipient-mail">
+                                <input type="email" id="mail" class="basket__recipient-mail-input" required>
+                                <label for="mail" class="basket__recipient-mail-input-label">Почта</label>
+                                <div class="error-message" id="mail-error">Проверьте адрес электронной почты</div>
+                                <div class="error-message" id="mail-empty-error">Укажите электронную почту</div>
+                            </div>
+                            <div class="basket__recipient-phone">
+                                <input type="tel" id="phone" class="basket__recipient-phone-input" required pattern="\+?\d{1,3} ?\d{3} ?\d{3} ?\d{2} ?\d{2}">
+                                <label for="phone" class="basket__recipient-phone-input-label">Телефон</label>
+                                <div class="error-message" id="phone-error">Формат: +9 999 999 99 99</div>
+                                <div class="error-message" id="phone-empty-error">Укажите номер телефона</div>
+                            </div>
+                            <div class="basket__recipient-inn">
+                                <input type="text" id="inn" class="basket__recipient-inn-input" required pattern="\d{14}">
+                                <label for="inn" class="basket__recipient-inn-input-label">ИНН</label>
+<!--                                <div>для таможенного оформления</div>-->
+                                <div class="error-message" id="inn-error">Проверьте ИНН</div>
+                                <div class="error-message" id="inn-empty-error">Укажите ИНН</div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="basket__pay">
+                <div class="basket__pay-content">
+                    <div class="basket__price">
+                        <div class="basket__price-all">
+                            <div>Итого</div>
+                            <div>2 101 063 <span>сом</span></div>
+                        </div>
+                        <div class="basket__price-info">
+                            <div class="basket__price-info-all">
+                                <div>203 товара</div>
+                                <div>2 302 048 сом</div>
+                            </div>
+                            <div class="basket__price-info-discount">
+                                <div>Скидка</div>
+                                <div>−200 985 сом</div>
+                            </div>
+                            <div  class="basket__price-info-delivery">
+                                <div>Доставка</div>
+                                <div>Бесплатно</div>
+                            </div>
+                        </div></div>
+                    <div class="basket__pay-delivery">
+                        <div>Доставка в пункт выдачи</div>
+                        <button  class="basket__pay-delivery-btb"><img src="../src/assets/pencil.svg"/></button>
+                    </div>
+                    <div class="delivery-popup-overlay" id="delivery-popup-overlay">
+                        <div class="delivery-popup" id="delivery-popup">
+                            <div class="delivery-popup-header">
+                                <span>Способ доставки</span>
+                                <span><img class="close" id="closePopup" src="../src/assets/X.svg"/></span>
+                            </div>
+                            <div class="point-courier-buttons">
+                                <div>
+                                    <input type="radio" id="option111" name="options" value="option111">
+                                    <label for="option111">В пункт выдачи</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="option222" name="options" value="option222">
+                                    <label for="option222">Курьером</label>
+                                </div>
+                            </div>
+                            <div class="popup-addresses">Мои адреса</div>
+
+                            <div class="delivery-radios">
+                                <div class="delivery-radio-wrapper">
+                                    <div class="delivery-radio">
+                                        <input type="radio" id="radio1" name="radios">
+                                        <label class="delivery-radio-label" for="radio1">Бишкек, улица Табышалиева, 57</label>
+
+                                    </div>
+                                    <img class="delivery-popup-delete" src="../src/assets/delete-grey.svg" alt="">
+                                    <div class="delivery-radio-star"><img src="../src/assets/ster.svg"/><span class="delivery-radio-star-rate">4.99</span><span>Пункт выдачи</span></div>
+                                </div>
+
+                                <div class="delivery-radio-wrapper">
+                                    <div class="delivery-radio">
+                                        <input type="radio" id="radio2" name="radios">
+                                        <label class="delivery-radio-label" for="radio2">Бишкек, улица Жукеева-Пудовкина, 77/1</label>
+
+                                    </div>
+                                    <img class="delivery-popup-delete" src="../src/assets/delete-grey.svg" alt="">
+                                    <div class="delivery-radio-star"><img src="../src/assets/ster.svg"/><span class="delivery-radio-star-rate">4.99</span><span>Пункт выдачи</span></div>
+                                </div>
+
+
+                                <div class="delivery-radio-wrapper">
+                                    <div class="delivery-radio">
+                                        <input type="radio" id="radio3" name="radios">
+                                        <label class="delivery-radio-label" for="radio3">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</label>
+
+                                    </div>
+                                    <img class="delivery-popup-delete" src="../src/assets/delete-grey.svg" alt="">
+                                    <div class="delivery-radio-star"><img src="../src/assets/ster.svg"/><span class="delivery-radio-star-rate">4.99</span><span>Пункт выдачи</span></div>
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="delivery-popup-btn">
+                                <button>Выбрать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__pay-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+                    <div class="basket__pay-date">5–8 фев</div>
+                    <div class="basket__pay-redelivery">
+                        <img src="../src/assets/icon.svg"/>
+                        <div>Обратная доставка товаров
+                            <br class="yes-wrap"> <span class="no-wrap">на склад<br class="redelivery-break-phone"> при отказе —
+                                <br class="pay-break"><span class="redelivery-green">бесплатно</span><div class="redelivery-free">
+                                Если товары вам не подойдут, мы вернем <br> их обратно на склад — это бесплатно
+                            </div></span>
+
+                        </div>
+                    </div>
+                    <div class="basket__pay-card">
+                        <div>Оплата картой</div>
+                        <button class="pay-delivery-btb"><img src="../src/assets/pencil.svg"/></button>
+                    </div>
+
+
+
+                    <div class="pay-popup-overlay" id="pay-popup-overlay">
+                        <div class="pay-popup">
+                            <div class="pay-popup-header">
+                                <div>Способ оплаты</div>
+                                <img id="closePayPopup" src="../src/assets/X.svg"/>
+                            </div>
+                            <div class="delivery-radios">
+                                <div class="delivery-radio">
+                                    <input type="radio" id="pay-radio1" name="radios">
+                                    <label class="pay-radio-label" for="pay-radio1">
+                                        <img class="pay-radio-img" src="../src/assets/mir.svg" alt="">
+                                        1234 56•• •••• 1234
+                                    </label>
+                                </div>
+
+                                <div class="delivery-radio">
+                                    <input type="radio" id="pay-radio2" name="radios">
+                                    <label class="pay-radio-label" for="pay-radio2">
+                                        <img class="pay-radio-img" src="../src/assets/visa.svg" alt="">
+                                        1234 56•• •••• 1234
+                                    </label>
+                                </div>
+
+                                <div class="delivery-radio">
+                                    <input type="radio" id="pay-radio3" name="radios">
+                                    <label class="pay-radio-label" for="pay-radio3">
+                                        <img class="pay-radio-img" src="../src/assets/maestro.svg" alt="">
+                                        1234 56•• •••• 1234
+                                    </label>
+                                </div>
+
+                                <div class="delivery-radio">
+                                    <input type="radio" id="pay-radio4" name="radios">
+                                    <label class="pay-radio-label" for="pay-radio4">
+                                        <img class="pay-radio-img" src="../src/assets/master.svg" alt="">
+                                        1234 56•• •••• 1234
+                                    </label>
+                                </div>
+                                <div class="pay-popup-btn">
+                                    <button>Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="basket__pay-card-info">
+                        <img src="../src/assets/mir.svg"/>
+                        <div>1234 12•• •••• 1234</div>
+                    </div>
+                    <div class="basket__pay-now-wrapper">
+                        <div class="basket__pay-now">
+                            <label class="main__checkbox">
+                                <input type="checkbox" id="order-checkbox" />
+                                <div class="main__checkbox-checkmark"></div>
+                                <div class="main__select-all-text">Списать оплату сразу</div>
+                            </label>
+                        </div>
+
+                        <div class="basket__pay-now-last">Спишем оплату с карты при получении</div>
+                    </div>
+
+                    <div class="order-btn">
+                        <button onclick="validateForm()" id="order-button" >Заказать</button>
+                    </div>
+                    <div class="basket__pay-license">
+                        <img src="../src/assets/gal.svg"/>
+                        <div>Соглашаюсь с правилами <br class="license-break">
+                            пользования торговой<br  class="license-big"> площадкой<br class="license-break"> и возврата</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+<footer>
+    <div class="footer-circle"></div>
+    <div class="footer-text">© 2022  ООО «Товары и точка»</div>
+    <div class="footer__bar">
+        <div class="footer__bar-content">
+            <button><img src="../src/assets/main1.svg"/></button>
+            <button><img src="../src/assets/catalog1.svg"/></button>
+            <button class="with-count"><img src="../src/assets/cart1.svg"/><span class="for-all-icon-count2" >3</span></button>
+            <button><img src="../src/assets/favorites1.svg"/></button>
+            <button><img src="../src/assets/profile1.svg"/></button>
+        </div>
+    </div>
+
+</footer>
+<script src="../src/index.js"></script>
+<script src="../src/popupDelivery.js"></script>
+<script src="../src/popupPay.js"></script>
+<script src="../src/validate.js"></script>
+</body>
+</html>
