@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
     .header__toggle-sidebar-icon-phone {
         display: none;
     }
@@ -47,11 +47,22 @@
     .remaind {
         display: none;
     }
+    .basket__pay {
+        position: relative;
+        width: 452px;
+        right: -23px;
+        z-index: 190000;
+    }
+    .basket__pay-content {
+        position: fixed;
+        /*width: 256px;*/
+        padding: 17px 22px 24px 24px;
+    }
 
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
+@media only screen and (min-width: 321px) and (max-width: 1024px) {
     body {
         width: 1024px;
     }
@@ -60,6 +71,12 @@
     }
     .delivery-radio-star {
         display: none;
+    }
+    .license-break {
+        display: block;
+    }
+    .basket__pay {
+        right: -28px;
     }
     .prod-price-phone {
         display: none;
@@ -70,6 +87,7 @@
     .search-icon-phone, .footer__bar-content{
         display: none;
     }
+
     .basket__absence-border-phone {
         display: none;
     }
@@ -167,6 +185,9 @@
     }
     .basket__pay-now-wrapper {
         margin-top: 12px;
+    }
+    .license-break-1 {
+        display: none;
     }
     .basket__pay-now-wrapper {
         margin-top: 12px;

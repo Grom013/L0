@@ -1,4 +1,4 @@
-@media only screen and (min-width: 240px) and (max-width:320px ) {
+@media only screen and (max-width:320px ) {
     body  {
         width: 320px;
     }
@@ -18,6 +18,14 @@
         margin-top: -13px;
         margin-right: 16px;
         width: 22px;
+    }
+    .order-btn {
+        width: 288px;
+    }
+    .order-btn button {
+        width: 288px;
+        margin-right: 0px;
+        font-weight: 700;
     }
     .header__logo {
         margin-top: 3px;
@@ -46,6 +54,7 @@
         border: none;
     }
     .basket {
+        width:281px;
         top: 56px;
         display: block;
         border-radius: 22px 22px 0 0;
@@ -59,8 +68,10 @@
     }
     .basket__main-border {
         width: 288px;
+        margin-top: 18px;
     }
     .basket__main-border-phone{
+        display: block;
         width: 288px;
         margin-top: -7px;
         border-bottom: 1px solid #dedee1;
@@ -75,12 +86,13 @@
     .basket__main-select-all {
         margin-top: 57px;
     }
+    .all-price-products {
+        margin-top: 59px;
+    }
     .basket__main-select-all-icon{
         margin-top: 63px;
     }
-    .basket__main-border{
-        margin-top: 18px;
-    }
+
     .basket__main-select-wrapper {
         position: relative;
     }
@@ -168,9 +180,9 @@
     .basket__main-select-img {
         margin-top: 4px;
     }
-     .basket__main-select-img img {
-         width: 80px;
-     }
+    .basket__main-select-img img {
+        width: 80px;
+    }
     .like-delete {
         margin-right: 7px;
     }
@@ -377,10 +389,14 @@
     .basket__pay-content{
         box-shadow: none;
         background: none;
+        right: 0;
         padding: 4px 0px 4px 0px;
     }
     .basket__price-all {
         width: 287px;
+    }
+    .license-break-1 {
+        display: block;
     }
     .basket__price-info{
         width: 288px;
@@ -390,6 +406,8 @@
     }
     .basket__pay {
         display: block;
+        position: static;
+        width: 288px;
     }
     .basket__pay-delivery,
     .basket__pay-address,
@@ -417,11 +435,12 @@
         border-radius: 8px;
         height: 66px;
     }
-    .order-btn button {
-        width: 288px;
-        font-weight: 700;
-    }
-        .yes-wrap, .pay-break,.license-break,.license-big{
+    /*.order-btn button {*/
+    /*    width: 288px;*/
+    /*    margin-right: -5px;*/
+    /*    font-weight: 700;*/
+    /*}*/
+    .yes-wrap, .pay-break,.license-break,.license-big{
         display: none;
     }
     .footer-circle {
@@ -479,6 +498,9 @@
         position: absolute;
         right:0;
     }
+    .basket__pay-redelivery div {
+        width: 265px;
+    }
     .delivery-radio-star{
         display: block;
         position: absolute;
@@ -513,4 +535,12 @@
     .pay-popup-btn {
         width: 280px;
     }
+    .footer-circle {
+        width: 320px;
+
     }
+    footer {
+        width: 320px;
+    }
+
+}

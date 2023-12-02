@@ -25,7 +25,7 @@ body {
 }
 
 .header__toggle-sidebar:hover {
-    
+
     border: 1px solid #ffffff;
 }
 
@@ -535,6 +535,14 @@ input::placeholder {
     width: 140px;
     text-align: right;
 }
+.prod-price-now-desk {
+    margin-bottom: 2px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.prod-price-now-desk span {
+    font-size: 16px;
+}
 .prod-price-now {
     margin-bottom: 2px;
     font-size: 20px;
@@ -723,7 +731,7 @@ input::placeholder {
 }
 
 .block-address {
-   margin-bottom: 1px;
+    margin-bottom: 1px;
 }
 
 .basket__making-pick-up-text {
@@ -993,6 +1001,7 @@ input.error {
 .basket__pay-content {
     background: #ffffff;
     font-family: Segoe UI, sans-serif;
+    /*right: 23px;*/
     position: relative;
     margin-top: 21px;
     padding: 17px 24px 24px 24px;
@@ -1343,8 +1352,9 @@ input[type="radio"]:checked::before {
 
 
 .basket__pay {
-    position: fixed;
-    right: 40px;
+    position: relative;
+    width: 455px;
+    right: -25px;
     z-index: 190000;
 }
 
@@ -1383,7 +1393,7 @@ input[type="radio"]:checked::before {
 .basket__pay-now{
     padding-top: 4px;
     padding-left: 8px;
- }
+}
 
 .basket__pay-now label div:last-child {
     margin-top: 6px;
@@ -1495,7 +1505,9 @@ footer {
     background: #6725a8;
     height: 88px;
 }
-
+.license-break-1 {
+    display: none;
+}
 .footer-circle {
     width: 1400px;
     background: #F6F6FA;
